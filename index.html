@@ -16,7 +16,11 @@
   <body>
     <main class="card">
       <section class="card-image">
-        <img src="./images/image-header-mobile.jpg" alt="" />
+        <picture>
+          <source media="(min-width:768px)" srcset="./images/image-header-desktop.jpg"/>
+          <source media="(min-width:0px)" srcset="./images/image-header-mobile.jpg"/>
+          <img src="./images/image-header-mobile.jpg" alt="" />
+        </picture>
       </section>
       <section class="card-text">
         <h1>Get <span>insights</span> that help your business grow.</h1>
@@ -25,15 +29,15 @@
           regarding revenue, customer experience, and overall efficiency.
         </h2>
         <div class="statistics">
-          <div class="text-10k">
+          <div class="stat">
             <p>10k+</p>
             <span>COMPANIES</span>
           </div>
-          <div class="text-314">
+          <div class="stat">
             <p>314</p>
             <span>TEMPLATES</span>
           </div>
-          <div class="text-12m">
+          <div class="stat">
             <p>12M+</p>
             <span>QUERIES</span>
           </div>
